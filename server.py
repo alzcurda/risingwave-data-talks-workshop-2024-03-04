@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+#!C:\Git\courses\risingwave-data-talks-workshop-2024-03-04\venv\Scripts\python
+####!/usr/bin/env python3
 
 from flask import Flask, jsonify
 import psycopg2

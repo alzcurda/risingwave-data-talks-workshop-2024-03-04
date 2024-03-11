@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-
+#!C:\Git\courses\risingwave-data-talks-workshop-2024-03-04\venv\Scripts\python
+###!/usr/bin/env python3
 import datetime
 import random
 import sys
@@ -68,7 +68,7 @@ def send_records_to_kafka(env, records, real_time=False):
             tpep_pickup_datetime = tpep_dropoff_datetime - tpep_interval
             record['tpep_pickup_datetime'] = tpep_pickup_datetime
             record['tpep_dropoff_datetime'] = tpep_dropoff_datetime
-            time.sleep(random.randrange(0, 100) / 1000)
+            # time.sleep(random.randrange(0, 100) / 1000)
             if i % 100 == 0:
                 logging.info(f"Sent {i} records")
 
